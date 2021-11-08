@@ -23,7 +23,7 @@ int length(int x){
 return len;
 }
 
-int isPalindrome(int x){
+int IsPalindrome(int x){
     if(x == 0)
     return 1;
     if(TheINum(x, length(x)-1) == 0 && TheINum(x,0) == 0){
@@ -41,7 +41,7 @@ int isPalindrome(int x){
     return 0;
 }
 
-int isArmstrong(int x) {
+int IsArmstrong(int x) {
     int y = length(x);
     if(rec(x,y) == x)
     return 1;
