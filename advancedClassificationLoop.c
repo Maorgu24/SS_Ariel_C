@@ -1,5 +1,6 @@
 # include <stdio.h>
 #include "NumClass.h"
+
 int TheINum(int x,int i){
     for(int j = 0; j < i; j++)
         x = x / 10;
@@ -36,3 +37,4 @@ int isPalindrome(int x){
     }
     return 1;
 }
+

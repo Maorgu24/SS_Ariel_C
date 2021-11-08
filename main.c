@@ -10,33 +10,33 @@ int main(){
     printf("Prime numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
-        if(isPrime(i));
-        printf("%i"i);
+        if(isPrime(i) == 1)
+        printf(" ,%i",i);
     }
 
     printf("\nArmstrong numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
-        if(isArmstrong(i));
-        printf("%i"i);
+        if(isArmstrong(i) == 1)
+        printf(" ,%i",i);
     }    
 
     printf("\nStrong numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
-        if(isStrong(i));
-        printf("%i"i);
+        if(isStrong(i) == 1)
+        printf(" ,%i",i);
     }
     
     printf("\nPalindrome numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
-        if(isPalindrome(i));
-        printf("%i"i);
+        if(isPalindrome(i) == 1)
+        printf(" ,%i",i);
     }
     
-printf("\n", );
+    printf("\n");
 
- return 0;
+    return 0;
 
 }
