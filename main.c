@@ -4,7 +4,7 @@
 
 int main(){
     int x,y;
-    scanf("%i%i", &x,&y);
+    scanf("%d%d", &x,&y);
 
 
 
@@ -12,28 +12,28 @@ int main(){
     // x<y
     for(int i = x; i <= y; i++){
         if(isPrime(i) == 1)
-        printf(" ,%i",i);
+        printf(" ,%d",i);
     }
 
     printf("\nArmstrong numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
         if(isArmstrong(i) == 1)
-        printf(" ,%i",i);
+        printf(" ,%d",i);
     }    
 
     printf("\nStrong numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
         if(isStrong(i) == 1)
-        printf(" ,%i",i);
+        printf(" ,%d",i);
     }
     
     printf("\nPalindrome numbers are:");
     // x<y
     for(int i = x; i <= y; i++){
         if(isPalindrome(i) == 1)
-        printf(" ,%i",i);
+        printf(" ,%d",i);
     }
     
     printf("\n");
