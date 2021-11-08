@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "NumClass.h"
 
-void main(){
+int main(){
     int x,y;
     scanf("%i%i", &x,&y);
 
