@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "NumClass.h"
+
 void main(){
     int x,y;
     scanf("%i%i", &x,&y);

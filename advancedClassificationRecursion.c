@@ -1,4 +1,5 @@
 # include <stdio.h>
+#include "NumClass.h"
 
 int rec(int x, int len){
     if(x == 0)
