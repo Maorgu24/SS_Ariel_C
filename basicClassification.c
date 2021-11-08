@@ -8,22 +8,33 @@ int factorial(int x){
     fac = fac*i;
     return fac;
 }
-int isStrong(int x){
-int temp = x;
-int sum = 0;
-while(temp != 0){
-    sum = sum + factorial(temp % 10);
-    temp = temp / 10;
-}
-if(sum == x)
-return 1;
-return 0;
+int isPrime(int num)
+{
+    for (int i=2; i<num ; i++)
+    {
+        if(num%i==0)
+        {
+            return 0;
+        }
+    }
+   return 1;
 }
 
-int isPrime(int x){
-    for(int i = 2; i <= sqrt(x); i++){
-        if(x % i == 0)
-        return 0;
+int isStrong(int num)
+{
+    int sum=0;
+    int temp = 1;
+    int num1= num;
+    do{
+    for(int i=1; i<=num%10;i++)
+    {
+        temp*=i;
     }
-    return 1;
+    num = num/10;
+    sum +=temp;
+    temp =1;
+    } while(num!=0);
+    if(sum==num1)
+    {return 1;}
+    else{return 0;}
 }
