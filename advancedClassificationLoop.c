@@ -4,8 +4,10 @@
 
 int TheNum(int x,int i){
     for(int j = 0; j < i; j++)
+    {
         x = x / 10;
-        return x % 10;
+        }
+    return x % 10;
 }
 
 int isArmstrong(int x) {

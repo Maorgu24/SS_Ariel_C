@@ -11,7 +11,7 @@ int rec(int x, int len){
 int TheINum(int x,int i){
     for(int j = 0; j < i; j++)
         x = x / 10;
-        return x % 10;
+    return x % 10;
 }
 
 int length(int x){
@@ -23,7 +23,7 @@ int length(int x){
 return len;
 }
 
-int IsPalindrome(int x){
+int isPalindrome(int x){
     if(x == 0)
     return 1;
     if(TheINum(x, length(x)-1) == 0 && TheINum(x,0) == 0){
@@ -41,7 +41,7 @@ int IsPalindrome(int x){
     return 0;
 }
 
-int IsArmstrong(int x) {
+int isArmstrong(int x) {
     int y = length(x);
     if(rec(x,y) == x)
     return 1;

@@ -1,6 +1,3 @@
- #include <stdio.h>
- #include <math.h>
-
 
 int isPrime(int x);
 int isPalindrome(int x);
