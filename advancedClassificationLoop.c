@@ -2,7 +2,7 @@
 #include <math.h>
 #include "NumClass.h"
 
-int TheINum(int x,int i){
+int TheNum(int x,int i){
     for(int j = 0; j < i; j++)
         x = x / 10;
         return x % 10;
@@ -33,7 +33,7 @@ int isPalindrome(int x){
         len ++;
     }
     for(int i = 0; i < len/2; i++){
-        if(TheINum(x,i) != TheINum(x,len-i-1))
+        if(TheNum(x,i) != TheNum(x,len-i-1))
         return 0;
     }
     return 1;
